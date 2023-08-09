@@ -4,6 +4,7 @@
 	import { browser } from '$app/environment';
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
+	import Nav from '$lib/components/nav.svelte';
 
 	onMount(() => {
 		if (browser) {
@@ -14,4 +15,7 @@
 	$: $page.url.pathname, browser && posthog.capture('$pageview', { layout: true });
 </script>
 
-<slot />
+<div class="bg-gray-200">
+	<Nav />
+	<slot />
+</div>
