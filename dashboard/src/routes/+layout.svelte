@@ -15,9 +15,7 @@
 	$: $page.url.pathname, browser && posthog.capture('$pageview', { layout: true });
 </script>
 
-<div class="">
-	<Nav />
-	<main class="md:ml-80">
-		<slot />
-	</main>
-</div>
+<Nav />
+<main class="md:ml-80 h-full relative">
+	<slot />
+</main>

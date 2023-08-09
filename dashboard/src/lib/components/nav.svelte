@@ -9,17 +9,13 @@
 	import Spaceship from '$lib/icons/spaceship.svelte';
 </script>
 
-<aside class="max-w-xs block w-full h-full fixed flex-wrap">
+<aside class="max-w-xs bg-slate-100/20 block w-full h-full fixed flex-wrap inset-y-0">
 	<div class="h-20">
 		<i
 			class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
 			aria-hidden="true"
 		/>
-		<a
-			class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700"
-			href="javascript:;"
-			target="_blank"
-		>
+		<a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700" href="/">
 			<span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">
 				Sheba Admin Dashboard
 			</span>
@@ -27,7 +23,7 @@
 	</div>
 
 	<hr
-		class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent"
+		class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/10 to-transparent"
 	/>
 
 	<div class="items-center block w-auto h-full overflow-auto grow basis-full">
