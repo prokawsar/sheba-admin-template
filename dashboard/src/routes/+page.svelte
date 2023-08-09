@@ -1,5 +1,6 @@
 <script>
 	import Card from '$lib/components/card.svelte';
+	import CardImage from '$lib/components/cardImage.svelte';
 	import NavTop from '$lib/components/navTop.svelte';
 	import Table from '$lib/components/table.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
@@ -24,6 +25,10 @@
 		<div class="flex flex-row gap-3">
 			<Table />
 			<Timeline />
+		</div>
+
+		<div class="flex flex-wrap -mx-3">
+			<CardImage />
 		</div>
 	</div>
 </div>
