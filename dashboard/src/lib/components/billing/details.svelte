@@ -3,7 +3,9 @@
 		faArrowDown,
 		faArrowUp,
 		faCalendar,
-		faQuestion
+		faPencil,
+		faQuestion,
+		faTrash
 	} from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 </script>
@@ -34,22 +36,23 @@
 								<span class="font-semibold text-slate-700 sm:ml-2"> FRB1235476 </span>
 							</span>
 						</div>
-						<div class="ml-auto text-right">
+						<div class="ml-auto flex flex-row gap-3 text-right">
 							<a
-								class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
+								class="relative z-10 flex gap-2 px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
 								href="javascript:;"
 							>
-								<i
+								<!-- <i
 									class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text"
 									aria-hidden="true"
-								/>
+								/> -->
+								<Fa icon={faTrash} class="text-red-400 mt-[1px]" />
 								Delete
 							</a>
 							<a
-								class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
+								class="flex gap-2 px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
 								href="javascript:;"
 							>
-								<i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true" />
+								<Fa icon={faPencil} class="mt-[1px]" />
 								Edit
 							</a>
 						</div>
@@ -70,22 +73,20 @@
 								<span class="font-semibold text-slate-700 sm:ml-2"> FRB1235476 </span>
 							</span>
 						</div>
-						<div class="ml-auto text-right">
+						<div class="ml-auto flex flex-row gap-3 text-right">
 							<a
-								class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
+								class="relative z-10 flex gap-2 px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
 								href="javascript:;"
 							>
-								<i
-									class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text"
-									aria-hidden="true"
-								/>
+								<Fa icon={faTrash} class="text-red-400 mt-[1px]" />
+
 								Delete
 							</a>
 							<a
-								class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
+								class="flex gap-2 px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
 								href="javascript:;"
 							>
-								<i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true" />
+								<Fa icon={faPencil} class="mt-[1px]" />
 								Edit
 							</a>
 						</div>
@@ -106,23 +107,20 @@
 								<span class="font-semibold text-slate-700 sm:ml-2"> FRB1235476 </span>
 							</span>
 						</div>
-						<div class="ml-auto text-right">
+						<div class="ml-auto flex flex-row gap-3 text-right">
 							<a
-								class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
+								class="relative z-10 flex gap-2 px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
 								href="javascript:;"
 							>
-								<i
-									class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text"
-									aria-hidden="true"
-								/>
+								<Fa icon={faTrash} class="text-red-400 mt-[1px]" />
+
 								Delete
 							</a>
 							<a
-								class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
+								class="flex flex-row gap-2 px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700"
 								href="javascript:;"
 							>
-								<i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true" />
-								Edit
+								<Fa icon={faPencil} class="mt-[1px]" /> Edit
 							</a>
 						</div>
 					</li>
