@@ -9,7 +9,7 @@
 	import Spaceship from '$lib/icons/spaceship.svelte';
 </script>
 
-<aside class="max-w-xs block w-full fixed flex-wrap">
+<aside class="max-w-xs block w-full h-full fixed flex-wrap">
 	<div class="h-20">
 		<i
 			class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
@@ -30,9 +30,9 @@
 		class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent"
 	/>
 
-	<div class="items-center block w-auto max-h-screen overflow-auto grow basis-full">
-		<ul class="flex flex-col pl-0 mb-0">
-			<li class="mt-1 w-full">
+	<div class="items-center block w-auto h-full overflow-auto grow basis-full">
+		<ul class="flex flex-col gap-2 pl-0 mb-0">
+			<li class="w-full">
 				<a
 					class="py-2 shadow-xl text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
 					href="./pages/dashboard.html"
@@ -48,9 +48,9 @@
 				</a>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class="w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/tables.html"
 				>
 					<div
@@ -62,9 +62,9 @@
 				</a>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class="w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/billing.html"
 				>
 					<div
@@ -76,25 +76,9 @@
 				</a>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class="w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-					href="./pages/virtual-reality.html"
-				>
-					<div
-						class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-					>
-						<Box_3d />
-					</div>
-					<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-						Virtual Reality
-					</span>
-				</a>
-			</li>
-
-			<li class="mt-1 w-full">
-				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/rtl.html"
 				>
 					<div
@@ -112,9 +96,9 @@
 				</h6>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class="w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/profile.html"
 				>
 					<div
@@ -126,9 +110,9 @@
 				</a>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class=" w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/sign-in.html"
 				>
 					<div
@@ -140,9 +124,9 @@
 				</a>
 			</li>
 
-			<li class="mt-1 w-full">
+			<li class="w-full">
 				<a
-					class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+					class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 					href="./pages/sign-up.html"
 				>
 					<div
