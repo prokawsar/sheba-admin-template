@@ -1,17 +1,34 @@
-# create-svelte
+# dashboard-starter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is starter repo for frontend project. With stack of Svelte, Tailwind, TypeScript, Charts.js, Fontawesome
 
-## Creating a project
+## Tech Stack
+
+```bash
+-> Svelte
+-> SvelteKit
+-> TypeScript
+-> Tailwind
+```
+
+Tools
+
+```bash
+-> Posthog (For track)
+-> Chart.js (For chart)
+-> Tippy.js (For tooltip)
+-> @inlang/sdk-js (For language support)
+-> svelte-fa (fontawesome icons)
+```
+
+## After Cloning this project
 
 If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# install all dependency
+npm i
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
 
 ## Developing
