@@ -1,3 +1,13 @@
+<script>
+	import {
+		faArrowDown,
+		faArrowUp,
+		faCalendar,
+		faQuestion
+	} from '@fortawesome/free-solid-svg-icons';
+	import Fa from 'svelte-fa';
+</script>
+
 <div class="flex flex-wrap mx-3">
 	<div class="w-full max-w-full px-3 mt-6 md:w-7/12 md:flex-none">
 		<div
@@ -129,8 +139,9 @@
 					<div class="max-w-full px-3 md:w-1/2 md:flex-none">
 						<h6 class="mb-0">Your Transactions</h6>
 					</div>
-					<div class="flex items-center justify-end max-w-full px-3 md:w-1/2 md:flex-none">
-						<i class="mr-2 far fa-calendar-alt" aria-hidden="true" />
+					<div class="flex items-center gap-1 justify-end max-w-full px-3 md:w-1/2 md:flex-none">
+						<!-- <i class="mr-2 far fa-calendar-alt" aria-hidden="true" /> -->
+						<Fa icon={faCalendar} />
 						<small>23 - 30 March 2020</small>
 					</div>
 				</div>
@@ -143,9 +154,10 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-red-600 border-transparent bg-transparent text-center align-middle font-bold uppercase text-red-600 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center bg-transparent text-center align-middle font-bold uppercase text-red-600 transition-all hover:opacity-75"
 							>
-								<i class="fas fa-arrow-down text-3xs" aria-hidden="true" />
+								<!-- <i class="fas fa-arrow-down text-3xs" aria-hidden="true" /> -->
+								<Fa icon={faArrowDown} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">Netflix</h6>
@@ -165,9 +177,10 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-lime-500 border-transparent bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
 							>
 								<i class="fas fa-arrow-up text-3xs" aria-hidden="true" />
+								<Fa icon={faArrowUp} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">Apple</h6>
@@ -190,9 +203,9 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-lime-500 border-transparent bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
 							>
-								<i class="fas fa-arrow-up text-3xs" aria-hidden="true" />
+								<Fa icon={faArrowUp} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">Stripe</h6>
@@ -212,9 +225,10 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-lime-500 border-transparent bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
 							>
 								<i class="fas fa-arrow-up text-3xs" aria-hidden="true" />
+								<Fa icon={faArrowUp} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">HubSpot</h6>
@@ -234,9 +248,10 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-lime-500 border-transparent bg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-centerbg-transparent text-center align-middle font-bold uppercase text-lime-500 transition-all hover:opacity-75"
 							>
 								<i class="fas fa-arrow-up text-3xs" aria-hidden="true" />
+								<Fa icon={faArrowUp} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">Sheba Queue</h6>
@@ -256,9 +271,10 @@
 					>
 						<div class="flex items-center">
 							<button
-								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center border border-solid border-slate-700 border-transparent bg-transparent text-center align-middle font-bold uppercase text-slate-700 transition-all hover:opacity-75"
+								class="leading-pro ease-soft-in text-xs bg-150 w-6.35 h-6.35 p-1.2 rounded-3.5xl tracking-tight-soft bg-x-25 mr-4 mb-0 flex cursor-pointer items-center justify-center bg-transparent text-center align-middle font-bold uppercase text-slate-700 transition-all hover:opacity-75"
 							>
-								<i class="fas fa-exclamation text-3xs" aria-hidden="true" />
+								<!-- <i class="fas fa-exclamation text-3xs" aria-hidden="true" /> -->
+								<Fa icon={faQuestion} />
 							</button>
 							<div class="flex flex-col">
 								<h6 class="mb-1 leading-normal text-sm text-slate-700">Webflow</h6>
