@@ -2,6 +2,7 @@
 	import Card from '$lib/components/card.svelte';
 	import NavTop from '$lib/components/navTop.svelte';
 	import Table from '$lib/components/table.svelte';
+	import Timeline from '$lib/components/timeline.svelte';
 	import { i, languages, switchLanguage } from '@inlang/sdk-js';
 </script>
 
@@ -20,6 +21,9 @@
 			<Card />
 		</div>
 
-		<Table />
+		<div class="flex flex-row gap-3">
+			<Table />
+			<Timeline />
+		</div>
 	</div>
 </div>
