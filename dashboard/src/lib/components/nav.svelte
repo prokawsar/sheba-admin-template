@@ -11,10 +11,8 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<aside
-	class="max-w-xs bg-slate-100/20 block w-full h-full fixed flex flex-col justify-between inset-y-0"
->
-	<div class="flex flex-col">
+<aside class="max-w-xs bg-slate-100/20 w-full h-full fixed flex flex-col justify-between inset-y-0">
+	<div class="flex flex-col h-full">
 		<div class="h-20">
 			<i
 				class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
@@ -31,7 +29,7 @@
 			class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/10 to-transparent"
 		/>
 
-		<div class="items-center block w-auto overflow-auto grow basis-full">
+		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
 			<ul class="flex flex-col gap-2 pl-0 mb-0">
 				<li class="w-full">
 					<a
