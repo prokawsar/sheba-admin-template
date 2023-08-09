@@ -5,6 +5,7 @@
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import Nav from '$lib/components/nav.svelte';
+	import Footer from '$lib/components/footer.svelte';
 
 	onMount(() => {
 		if (browser) {
@@ -18,4 +19,5 @@
 <Nav />
 <main class="md:ml-80 h-full relative">
 	<slot />
+	<Footer />
 </main>
