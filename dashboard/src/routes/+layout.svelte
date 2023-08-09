@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import Nav from '$lib/components/nav.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import NavTop from '$lib/components/navTop.svelte';
 
 	onMount(() => {
 		if (browser) {
@@ -18,6 +19,9 @@
 
 <Nav />
 <main class="md:ml-80 h-full relative">
+	<div class="mx-4">
+		<NavTop />
+	</div>
 	<slot />
 	<Footer />
 </main>

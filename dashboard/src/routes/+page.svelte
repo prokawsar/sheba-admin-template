@@ -12,8 +12,6 @@
 </svelte:head>
 
 <div class="mx-4">
-	<NavTop />
-
 	<div class="flex flex-col gap-3 mt-5">
 		<div class="flex flex-row">
 			<Card />

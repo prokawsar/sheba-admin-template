@@ -7,6 +7,7 @@
 	import Settings from '$lib/icons/settings.svelte';
 	import Shop from '$lib/icons/shop.svelte';
 	import Spaceship from '$lib/icons/spaceship.svelte';
+	import { activeTab } from '$lib/stores/store';
 	import { faDiamond, faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 </script>
@@ -33,8 +34,10 @@
 			<ul class="flex flex-col gap-2 pl-0 mb-0">
 				<li class="w-full">
 					<a
-						class="py-2 shadow-xl text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
-						href="./pages/dashboard.html"
+						class:shadow-xl={$activeTab == '/'}
+						class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
+						href="/"
+						on:click={() => ($activeTab = '/')}
 					>
 						<div
 							class="bg-gradient-to-tl from-purple-700 to-pink-500 shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
@@ -65,8 +68,10 @@
 
 				<li class="w-full">
 					<a
+						class:shadow-xl={$activeTab == 'billing'}
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/billing.html"
+						href="/billing"
+						on:click={() => ($activeTab = 'billing')}
 					>
 						<div
 							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current stroke-0 text-center xl:p-2"
@@ -118,7 +123,7 @@
 				<li class=" w-full">
 					<a
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/sign-in.html"
+						href="signin"
 					>
 						<div
 							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
@@ -134,7 +139,7 @@
 				<li class="w-full">
 					<a
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/sign-up.html"
+						href="/signup"
 					>
 						<div
 							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
