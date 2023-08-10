@@ -33,7 +33,7 @@
 		/>
 
 		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
-			<ul class="flex flex-col gap-2 pl-0 mb-0">
+			<ul class="flex flex-col pl-0 mb-0">
 				<li class="w-full">
 					<a
 						class:shadow-xl={$activeTab == '/'}
