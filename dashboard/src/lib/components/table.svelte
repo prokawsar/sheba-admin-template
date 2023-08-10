@@ -102,39 +102,67 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-								<div class="mt-2 avatar-group">
+								<!-- <div class="mt-2 avatar-group">
 									<a
 										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+										class="relative z-20 inline-flex items-center justify-center w-8 h-8 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
 										data-target="tooltip_trigger"
 										data-placement="bottom"
 									>
-										<img src="images/team-1.jpg" class="w-full rounded-full" alt="team1" />
+										<img
+											src="images/people/young-woman.jpg"
+											class="w-full rounded-full"
+											alt="team1"
+										/>
 									</a>
 									<a
 										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+										class="relative z-20 inline-flex items-center justify-center w-8 h-8 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
 										data-target="tooltip_trigger"
 										data-placement="bottom"
 									>
-										<img src="images/team-2.jpg" class="w-full rounded-full" alt="team2" />
+										<img
+											src="images/people/young-woman.jpg"
+											class="w-full rounded-full"
+											alt="team2"
+										/>
 									</a>
 									<a
 										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+										class="relative z-20 inline-flex items-center justify-center w-8 h-8 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
 										data-target="tooltip_trigger"
 										data-placement="bottom"
 									>
-										<img src="images/team-3.jpg" class="w-full rounded-full" alt="team3" />
+										<img
+											src="images/people/young-woman.jpg"
+											class="w-full rounded-full"
+											alt="team3"
+										/>
 									</a>
 									<a
 										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
+										class="relative z-20 inline-flex items-center justify-center w-8 h-8 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
 										data-target="tooltip_trigger"
 										data-placement="bottom"
 									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="team4" />
+										<img
+											src="images/people/young-woman.jpg"
+											class="w-full rounded-full"
+											alt="team4"
+										/>
 									</a>
+								</div> -->
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td
@@ -174,51 +202,17 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-								<div class="mt-2 avatar-group">
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-2.jpg" class="w-full rounded-full" alt="team5" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="px-2 py-1 text-sm text-white bg-black rounded-lg hidden"
-										role="tooltip"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(792px, 576px, 0px);"
-										data-popper-placement="bottom"
-									>
-										Romina Hadid
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="team6" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="px-2 py-1 text-sm text-white bg-black rounded-lg hidden"
-										role="tooltip"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(804px, 576px, 0px);"
-										data-popper-placement="bottom"
-									>
-										Jessica Doe
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td
@@ -258,51 +252,22 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-								<div class="mt-2 avatar-group">
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-3.jpg" class="w-full rounded-full" alt="team8" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(786.857px, 635.429px, 0px);"
-									>
-										Romina Hadid
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-1.jpg" class="w-full rounded-full" alt="team9" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(798.857px, 635.429px, 0px);"
-									>
-										Jessica Doe
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td
@@ -342,95 +307,17 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-								<div class="mt-2 avatar-group">
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="user1" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(786.857px, 697.714px, 0px);"
-									>
-										Ryan Tompson
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-3.jpg" class="w-full rounded-full" alt="user2" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(798.857px, 697.714px, 0px);"
-									>
-										Romina Hadid
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="user3" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(810.857px, 697.714px, 0px);"
-									>
-										Alexander Smith
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-1.jpg" class="w-full rounded-full" alt="user4" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(823.429px, 697.714px, 0px);"
-									>
-										Jessica Doe
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td
@@ -470,29 +357,27 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
-								<div class="mt-2 avatar-group">
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="user5" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="bottom"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(786.857px, 760px, 0px);"
-									>
-										Ryan Tompson
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td
@@ -532,53 +417,17 @@
 								</div>
 							</td>
 							<td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
-								<div class="mt-2 avatar-group">
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-1.jpg" class="w-full rounded-full" alt="user6" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="hidden px-2 py-1 text-sm text-white bg-black rounded-lg"
-										role="tooltip"
-										data-popper-placement="top"
-										style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(786.857px, 13.1429px, 0px);"
-										data-popper-reference-hidden=""
-										data-popper-escaped=""
-									>
-										Ryan Tompson
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
-									<a
-										href="javascript:;"
-										class="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-4 text-xs text-white transition-all duration-200 border-2 border-white border-solid rounded-full ease-soft-in-out hover:z-30"
-										data-target="tooltip_trigger"
-										data-placement="bottom"
-									>
-										<img src="images/team-4.jpg" class="w-full rounded-full" alt="user7" />
-									</a>
-									<div
-										data-target="tooltip"
-										class="px-2 py-1 text-sm text-white bg-black rounded-lg hidden"
-										role="tooltip"
-										style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(804px, 835.429px, 0px);"
-										data-popper-placement="bottom"
-									>
-										Jessica Doe
-										<div
-											class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
-											data-popper-arrow=""
-											style="position: absolute; left: 0px; transform: translate3d(0px, 0px, 0px);"
-										/>
-									</div>
+								<div class="flex -space-x-4">
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
+									<img
+										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
+										src="images/people/young-woman.jpg"
+										alt=""
+									/>
 								</div>
 							</td>
 							<td

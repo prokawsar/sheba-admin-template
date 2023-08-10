@@ -13,7 +13,7 @@
 
 <div class="mx-4">
 	<div class="flex flex-col gap-3 mt-5">
-		<div class="flex flex-row">
+		<div class="flex flex-row gap-3">
 			<Card />
 			<Card />
 			<Card />

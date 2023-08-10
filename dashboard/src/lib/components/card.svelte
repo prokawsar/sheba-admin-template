@@ -1,4 +1,4 @@
-<div class="w-full max-w-full mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
+<div class="w-full max-w-full mb-6 xl:mb-0">
 	<div
 		class="relative flex flex-col min-w-0 break-words bg-white shadow-xl rounded-2xl bg-clip-border"
 	>
