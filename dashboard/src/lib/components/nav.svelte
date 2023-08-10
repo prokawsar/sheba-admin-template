@@ -8,13 +8,15 @@
 	import Shop from '$lib/icons/shop.svelte';
 	import Spaceship from '$lib/icons/spaceship.svelte';
 	import { activeTab } from '$lib/stores/store';
-	import { faDiamond, faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons';
+	import { faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 </script>
 
-<aside class="max-w-xs bg-slate-100/20 w-full h-full fixed flex flex-col justify-between inset-y-0">
+<aside
+	class="max-w-xs bg-slate-100/20 w-full fixed pt-20 h-full flex flex-col justify-between z-10 inset-y-0"
+>
 	<div class="flex flex-col h-full">
-		<div class="h-20">
+		<!-- <div class="h-20">
 			<i
 				class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
 				aria-hidden="true"
@@ -24,7 +26,7 @@
 					Sheba Admin Dashboard
 				</span>
 			</a>
-		</div>
+		</div> -->
 
 		<hr
 			class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/10 to-transparent"

@@ -4,11 +4,10 @@
 </script>
 
 <nav
-	class="relative bg-slate-100 mt-2 flex flex-wrap items-center justify-between px-0 py-2 transition-all shadow-none duration-250 ease-soft-in rounded-2xl lg:flex-nowrap lg:justify-start"
+	class="fixed top-0 bg-slate-100 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-none duration-250 ease-in lg:justify-start"
 >
-	<div class=" flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit">
-		<nav>
-			<!-- breadcrumb -->
+	<div class=" flex items-center justify-between w-full px-8 py-1 mx-auto flex-wrap-inherit">
+		<!-- <nav>
 			<ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
 				<li class="text-sm leading-normal">
 					<a class="opacity-50 text-slate-700" href="javascript:;"> Pages </a>
@@ -21,8 +20,12 @@
 				</li>
 			</ol>
 			<h6 class="mb-0 font-bold capitalize">Dashboard</h6>
-		</nav>
-
+		</nav> -->
+		<a class="block m-0 text-sm whitespace-nowrap text-slate-700" href="/">
+			<span class="font-semibold transition-all duration-200 ease-nav-brand">
+				Sheba Admin Dashboard
+			</span>
+		</a>
 		<div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
 			<div class="flex items-center md:ml-auto md:pr-4">
 				<div
@@ -36,7 +39,7 @@
 					</span>
 					<input
 						type="text"
-						class="pl-9 text-sm focus:shadow-md focus:border-2 ease-soft w-1/100 leading-6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
+						class="pl-9 text-sm focus:shadow-md focus:outline-2 ease-soft w-1/100 leading-6 relative -ml-px block min-w-0 flex-auto rounded-lg outline outline-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:outline-fuchsia-300 focus:border-none focus:transition-shadow"
 						placeholder="Type here..."
 					/>
 				</div>

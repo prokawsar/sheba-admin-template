@@ -17,11 +17,19 @@
 	$: $page.url.pathname, browser && posthog.capture('$pageview', { layout: true });
 </script>
 
-<Nav />
-<main class="md:ml-80 h-full relative">
-	<div class="mx-4">
+<div class="flex flex-col w-full px-1">
+	<!-- <NavTop /> -->
+	<div class="w-full z-50">
 		<NavTop />
 	</div>
-	<slot />
-	<Footer />
-</main>
+	<div class=" h-full pt-16">
+		<Nav />
+		<main class="h-full relative pl-80">
+			<!-- <div class="mx-4">
+				<NavTop />
+			</div> -->
+			<slot />
+			<Footer />
+		</main>
+	</div>
+</div>
