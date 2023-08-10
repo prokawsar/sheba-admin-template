@@ -10,6 +10,8 @@
 	import { activeTab } from '$lib/stores/store';
 	import { faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
+
+	let showElements = false;
 </script>
 
 <aside
@@ -99,7 +101,41 @@
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft"> RTL </span>
 					</a>
 				</li>
+				<li class="w-full">
+					<a
+						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+						href="#"
+						on:click={() => (showElements = !showElements)}
+					>
+						<div
+							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
+						>
+							<Settings />
+						</div>
+						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
+							UI Elements
+						</span>
+					</a>
 
+					<div class="flex-col hidden" class:!flex={showElements}>
+						<a
+							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+							href=""
+						>
+							<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
+								Buttons
+							</span>
+						</a>
+						<a
+							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+							href=""
+						>
+							<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
+								Alert
+							</span>
+						</a>
+					</div>
+				</li>
 				<li class="w-full mt-4">
 					<h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase opacity-60">
 						Account pages
