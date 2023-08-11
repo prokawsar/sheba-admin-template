@@ -7,23 +7,32 @@
 		text = '',
 		onClick: Function = () => {},
 		icon: IconDefinition = faIcons;
+
+	let hover = false;
+
+	$: activeMenu = $activeTab == text.trim().toLocaleLowerCase().replace(/\s/g, '');
 </script>
 
 <a
-	class:!shadow-lg={$activeTab == text.trim().toLocaleLowerCase().replace(/\s/g, '')}
+	on:mouseenter={() => (hover = true)}
+	on:mouseleave={() => (hover = false)}
+	class:!shadow-lg={activeMenu}
 	class="hover:shadow-md shadow-sm rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 	href={link || ''}
 	on:click={() => (onClick ? onClick() : null)}
 >
 	{#if icon}
 		<div
-			class="shadow-sm mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
+			class="shadow-sm mr-2 flex h-8 w-8 items-center justify-center rounded-md bg-white text-center xl:p-2"
 		>
-			<!-- <Customer /> -->
-			<Fa {icon} />
+			<Fa {icon} class="text-gray-500 {hover || activeMenu ? '!text-black' : ''}" />
 		</div>
 	{/if}
-	<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
+	<span
+		class="ml-1 text-gray-700 duration-300 pointer-events-none {hover || activeMenu
+			? '!text-black'
+			: ''}"
+	>
 		{text}
 	</span>
 </a>
