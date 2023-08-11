@@ -11,7 +11,7 @@
 	<div class=" flex items-center justify-between w-full px-8 py-1 mx-auto flex-wrap-inherit">
 		<div class="flex flex-row gap-3 items-center">
 			<button class="" on:click={() => (show = !show)}>
-				<Fa icon={faBars} />
+				<Fa icon={faBars} size="1.1x" />
 			</button>
 			<a class="block m-0 text-sm whitespace-nowrap text-slate-700" href="/">
 				<span class="font-semibold transition-all duration-200 ease-nav-brand">

@@ -29,10 +29,7 @@
 		{#if showSideNav}
 			<Nav />
 		{/if}
-		<main
-			class="h-full relative transition transform duration-700 delay-700 ease-linear"
-			class:pl-80={showSideNav}
-		>
+		<main class="h-full relative transition-all duration-150 delay-75" class:pl-80={showSideNav}>
 			<!-- <div class="mx-4">
 				<NavTop />
 			</div> -->
