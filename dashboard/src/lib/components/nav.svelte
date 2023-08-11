@@ -1,12 +1,5 @@
 <script>
 	import NavItem from '$lib/elements/navItem.svelte';
-	import Box_3d from '$lib/icons/box-3d.svelte';
-	import Credit from '$lib/icons/credit.svelte';
-	import Customer from '$lib/icons/customer.svelte';
-	import Document from '$lib/icons/document.svelte';
-	import Office from '$lib/icons/office.svelte';
-	import Settings from '$lib/icons/settings.svelte';
-	import Shop from '$lib/icons/shop.svelte';
 	import Spaceship from '$lib/icons/spaceship.svelte';
 	import { activeTab } from '$lib/stores/store';
 	import {
@@ -17,13 +10,18 @@
 		faTable,
 		faUser
 	} from '@fortawesome/free-solid-svg-icons';
-	import { text } from '@sveltejs/kit';
 	import Fa from 'svelte-fa';
+	import { slide } from 'svelte/transition';
 
 	let showElements = false;
 </script>
 
 <aside
+	transition:slide={{
+		duration: 150,
+		delay: 50,
+		axis: 'x'
+	}}
 	class="max-w-xs shadow-xl bg-slate-100/20 w-full fixed pt-20 h-full flex flex-col justify-between z-10 inset-y-0"
 >
 	<div class="flex flex-col h-full">

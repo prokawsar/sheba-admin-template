@@ -1,31 +1,24 @@
 <script>
 	import Fa from 'svelte-fa';
-	import { faBell, faCog, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+	import { faBars, faBell, faCog, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+
+	export let show = true;
 </script>
 
 <nav
 	class="fixed top-0 bg-slate-100 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-none duration-250 ease-in lg:justify-start"
 >
 	<div class=" flex items-center justify-between w-full px-8 py-1 mx-auto flex-wrap-inherit">
-		<!-- <nav>
-			<ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
-				<li class="text-sm leading-normal">
-					<a class="opacity-50 text-slate-700" href="javascript:;"> Pages </a>
-				</li>
-				<li
-					class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']"
-					aria-current="page"
-				>
-					Dashboard
-				</li>
-			</ol>
-			<h6 class="mb-0 font-bold capitalize">Dashboard</h6>
-		</nav> -->
-		<a class="block m-0 text-sm whitespace-nowrap text-slate-700" href="/">
-			<span class="font-semibold transition-all duration-200 ease-nav-brand">
-				Sheba Admin Dashboard
-			</span>
-		</a>
+		<div class="flex flex-row gap-3 items-center">
+			<button class="" on:click={() => (show = !show)}>
+				<Fa icon={faBars} />
+			</button>
+			<a class="block m-0 text-sm whitespace-nowrap text-slate-700" href="/">
+				<span class="font-semibold transition-all duration-200 ease-nav-brand">
+					Sheba Admin Dashboard
+				</span>
+			</a>
+		</div>
 		<div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
 			<div class="flex items-center md:ml-auto md:pr-4">
 				<div
