@@ -21,7 +21,7 @@
 		showSideSettings = false;
 </script>
 
-<div class="flex flex-col w-full px-1">
+<div class="flex flex-col w-full">
 	<!-- <NavTop /> -->
 	<div class="w-full z-50">
 		<NavTop bind:showSideNav bind:showSideSettings />
