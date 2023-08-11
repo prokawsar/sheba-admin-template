@@ -2,6 +2,7 @@
 	import Chart from 'chart.js/auto';
 	import { onMount } from 'svelte';
 
+	export let datasetsConfig = {};
 	let canvasRef: HTMLCanvasElement;
 	let chart;
 
@@ -24,7 +25,11 @@
 					{ x: '2017-04-10', y: 22 },
 					{ x: '2017-04-15', y: 5 },
 					{ x: '2017-04-22', y: 12 }
-				]
+				],
+
+				borderColor: '#0284c7',
+				backgroundColor: '#38bdf8',
+				...datasetsConfig
 			},
 			{
 				label: 'Data 2',
@@ -38,12 +43,15 @@
 					{ x: '2017-02-15', y: 15 },
 					{ x: '2017-02-22', y: 62 },
 					{ x: '2017-03-01', y: 58 },
-					{ x: '2017-03-10', y: 22 },
-					{ x: '2017-04-01', y: 28 },
-					{ x: '2017-04-10', y: 12 },
-					{ x: '2017-04-15', y: 25 },
-					{ x: '2017-04-22', y: 32 }
-				]
+					{ x: '2017-03-10', y: -22 },
+					{ x: '2017-04-01', y: -28 },
+					{ x: '2017-04-10', y: -12 },
+					{ x: '2017-04-15', y: -25 },
+					{ x: '2017-04-22', y: -32 }
+				],
+				borderColor: '#c084fc',
+				backgroundColor: '#d8b4fe',
+				...datasetsConfig
 			}
 		]
 	};
@@ -76,6 +84,12 @@
 						color: 'black'
 					}
 				},
+
+				interaction: {
+					mode: 'nearest',
+					axis: 'x',
+					intersect: false
+				},
 				scales: {
 					y: {
 						grid: {
@@ -83,7 +97,8 @@
 						},
 						ticks: {
 							color: 'black'
-						}
+						},
+						stacked: true
 					},
 					x: {
 						ticks: {
