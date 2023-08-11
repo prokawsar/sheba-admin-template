@@ -4,10 +4,9 @@
 	import { browser } from '$app/environment';
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
-	import Nav from '$lib/components/nav.svelte';
+	import NavSide from '$lib/components/navSide.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import NavTop from '$lib/components/navTop.svelte';
-	import { slide } from 'svelte/transition';
 	import SettingsSide from '$lib/components/settingsSide.svelte';
 
 	onMount(() => {
@@ -29,7 +28,7 @@
 	</div>
 	<div class=" h-full pt-16">
 		{#if showSideNav}
-			<Nav />
+			<NavSide />
 		{/if}
 		<main class="h-full relative transition-all duration-150 delay-75" class:pl-80={showSideNav}>
 			<!-- <div class="mx-4">
