@@ -1,4 +1,5 @@
 <script>
+	import NavItem from '$lib/elements/navItem.svelte';
 	import Box_3d from '$lib/icons/box-3d.svelte';
 	import Credit from '$lib/icons/credit.svelte';
 	import Customer from '$lib/icons/customer.svelte';
@@ -8,7 +9,15 @@
 	import Shop from '$lib/icons/shop.svelte';
 	import Spaceship from '$lib/icons/spaceship.svelte';
 	import { activeTab } from '$lib/stores/store';
-	import { faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons';
+	import {
+		faCog,
+		faCreditCardAlt,
+		faDashboard,
+		faDiamondTurnRight,
+		faTable,
+		faUser
+	} from '@fortawesome/free-solid-svg-icons';
+	import { text } from '@sveltejs/kit';
 	import Fa from 'svelte-fa';
 
 	let showElements = false;
@@ -37,7 +46,7 @@
 		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
 			<ul class="flex flex-col pl-0 mb-0">
 				<li class="w-full">
-					<a
+					<!-- <a
 						class:shadow-xl={$activeTab == '/'}
 						class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
 						href="/"
@@ -51,27 +60,21 @@
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
 							Dashboard
 						</span>
-					</a>
+					</a> -->
+					<NavItem
+						text="Dashboard"
+						icon={faDashboard}
+						link="/"
+						onClick={() => ($activeTab = 'dashboard')}
+					/>
 				</li>
 
 				<li class="w-full">
-					<a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/tables.html"
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Office />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Tables
-						</span>
-					</a>
+					<NavItem text="Tables" icon={faTable} onClick={() => ($activeTab = 'tables')} />
 				</li>
 
 				<li class="w-full">
-					<a
+					<!-- <a
 						class:shadow-xl={$activeTab == 'billing'}
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 						href="/billing"
@@ -85,10 +88,16 @@
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
 							Billing
 						</span>
-					</a>
+					</a> -->
+					<NavItem
+						text="Billing"
+						icon={faCreditCardAlt}
+						link="/billing"
+						onClick={() => ($activeTab = 'billing')}
+					/>
 				</li>
 
-				<li class="w-full">
+				<!-- <li class="w-full">
 					<a
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 						href="./pages/rtl.html"
@@ -100,9 +109,9 @@
 						</div>
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft"> RTL </span>
 					</a>
-				</li>
+				</li> -->
 				<li class="w-full">
-					<a
+					<!-- <a
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 						href="#"
 						on:click={() => (showElements = !showElements)}
@@ -115,17 +124,26 @@
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
 							UI Elements
 						</span>
-					</a>
+					</a> -->
+					<NavItem
+						text="UI Elements"
+						icon={faCog}
+						onClick={() => {
+							(showElements = !showElements), ($activeTab = 'uielements');
+						}}
+					/>
 
 					<div class="flex-col hidden" class:!flex={showElements}>
-						<a
+						<!-- <a
 							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 							href=""
 						>
 							<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
 								Buttons
 							</span>
-						</a>
+						</a> -->
+						<NavItem text="Buttons" />
+
 						<a
 							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 							href=""
@@ -143,39 +161,25 @@
 				</li>
 
 				<li class="w-full">
-					<a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/profile.html"
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Customer />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Profile
-						</span>
-					</a>
+					<NavItem
+						text="Profile"
+						link="/profile"
+						icon={faUser}
+						onClick={() => ($activeTab = 'profile')}
+					/>
 				</li>
 
 				<li class=" w-full">
-					<a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="signin"
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Document />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Sign In
-						</span>
-					</a>
+					<NavItem
+						text="Sign In"
+						link="/signin"
+						icon={faUser}
+						onClick={() => ($activeTab = 'signin')}
+					/>
 				</li>
 
 				<li class="w-full">
-					<a
+					<!-- <a
 						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
 						href="/signup"
 					>
@@ -187,7 +191,13 @@
 						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
 							Sign Up
 						</span>
-					</a>
+					</a> -->
+					<NavItem
+						text="Sign Up"
+						link="/signup"
+						icon={faUser}
+						onClick={() => ($activeTab = 'signup')}
+					/>
 				</li>
 			</ul>
 		</div>
