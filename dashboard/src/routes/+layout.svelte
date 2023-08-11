@@ -8,6 +8,7 @@
 	import Footer from '$lib/components/footer.svelte';
 	import NavTop from '$lib/components/navTop.svelte';
 	import { slide } from 'svelte/transition';
+	import SettingsSide from '$lib/components/settingsSide.svelte';
 
 	onMount(() => {
 		if (browser) {
@@ -17,13 +18,14 @@
 
 	$: $page.url.pathname, browser && posthog.capture('$pageview', { layout: true });
 
-	let showSideNav = true;
+	let showSideNav = true,
+		showSideSettings = false;
 </script>
 
 <div class="flex flex-col w-full px-1">
 	<!-- <NavTop /> -->
 	<div class="w-full z-50">
-		<NavTop bind:show={showSideNav} />
+		<NavTop bind:showSideNav bind:showSideSettings />
 	</div>
 	<div class=" h-full pt-16">
 		{#if showSideNav}
@@ -36,5 +38,8 @@
 			<slot />
 			<Footer />
 		</main>
+		{#if showSideSettings}
+			<SettingsSide bind:showSideSettings />
+		{/if}
 	</div>
 </div>

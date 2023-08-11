@@ -2,16 +2,17 @@
 	import Fa from 'svelte-fa';
 	import { faBars, faBell, faCog, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 
-	export let show = true;
+	export let showSideNav = true,
+		showSideSettings = false;
 </script>
 
 <nav
-	class="fixed top-0 bg-slate-100 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-none duration-250 ease-in lg:justify-start"
+	class="fixed top-0 z-10 bg-slate-100 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-none duration-250 ease-in lg:justify-start"
 >
 	<div class=" flex items-center justify-between w-full px-8 py-1 mx-auto flex-wrap-inherit">
 		<div class="flex flex-row gap-3 items-center">
-			<button class="" on:click={() => (show = !show)}>
-				<Fa icon={faBars} size="1.1x" />
+			<button class="" on:click={() => (showSideNav = !showSideNav)}>
+				<Fa icon={faBars} size="1.1x" class="text-gray-500" />
 			</button>
 			<a class="block m-0 text-sm whitespace-nowrap text-slate-700" href="/">
 				<span class="font-semibold transition-all duration-200 ease-nav-brand">
@@ -25,7 +26,7 @@
 					class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft"
 				>
 					<span
-						class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all"
+						class="text-sm ease-soft leading-5.6 absolute z-20 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all"
 					>
 						<!-- <i class="fas fa-search" aria-hidden="true" /> -->
 						<Fa icon={faSearch} />
@@ -69,11 +70,14 @@
 					</a>
 				</li>
 				<li class="flex items-center px-4">
-					<a href="javascript:;" class="p-0 text-sm transition-all ease-nav-brand text-slate-500">
+					<button
+						on:click={() => (showSideSettings = !showSideSettings)}
+						class="p-0 text-sm transition-all ease-nav-brand text-slate-500"
+					>
 						<!-- <i class="cursor-pointer fa fa-cog" aria-hidden="true" /> -->
 						<Fa icon={faCog} />
 						<!-- fixed-plugin-button-nav  -->
-					</a>
+					</button>
 				</li>
 
 				<!-- notifications -->

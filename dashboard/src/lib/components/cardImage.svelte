@@ -54,7 +54,7 @@
 			<span
 				class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"
 			/>
-			<div class="relative z-10 flex flex-col flex-auto h-full p-4">
+			<div class="relative flex flex-col flex-auto h-full p-4">
 				<h5 class="pt-2 mb-6 font-bold text-white">Work with the rockets</h5>
 				<p class="text-white">
 					Wealth creation is an evolutionarily recent positive-sum game. It is all about who take

@@ -1,6 +1,5 @@
 <script>
 	import NavItem from '$lib/elements/navItem.svelte';
-	import Spaceship from '$lib/icons/spaceship.svelte';
 	import { activeTab } from '$lib/stores/store';
 	import {
 		faCog,
@@ -44,21 +43,6 @@
 		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
 			<ul class="flex flex-col pl-0 mb-0">
 				<li class="w-full">
-					<!-- <a
-						class:shadow-xl={$activeTab == '/'}
-						class="py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors"
-						href="/"
-						on:click={() => ($activeTab = '/')}
-					>
-						<div
-							class="bg-gradient-to-tl from-purple-700 to-pink-500 shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Shop />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Dashboard
-						</span>
-					</a> -->
 					<NavItem
 						text="Dashboard"
 						icon={faDashboard}
@@ -72,21 +56,6 @@
 				</li>
 
 				<li class="w-full">
-					<!-- <a
-						class:shadow-xl={$activeTab == 'billing'}
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="/billing"
-						on:click={() => ($activeTab = 'billing')}
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current stroke-0 text-center xl:p-2"
-						>
-							<Credit />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Billing
-						</span>
-					</a> -->
 					<NavItem
 						text="Billing"
 						icon={faCreditCardAlt}
@@ -109,20 +78,6 @@
 					</a>
 				</li> -->
 				<li class="w-full">
-					<!-- <a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="#"
-						on:click={() => (showElements = !showElements)}
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Settings />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							UI Elements
-						</span>
-					</a> -->
 					<NavItem
 						text="UI Elements"
 						icon={faCog}
@@ -132,14 +87,6 @@
 					/>
 
 					<div class="flex-col hidden" class:!flex={showElements}>
-						<!-- <a
-							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-							href=""
-						>
-							<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-								Buttons
-							</span>
-						</a> -->
 						<NavItem text="Buttons" />
 
 						<a
@@ -177,19 +124,6 @@
 				</li>
 
 				<li class="w-full">
-					<!-- <a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="/signup"
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Spaceship />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-							Sign Up
-						</span>
-					</a> -->
 					<NavItem
 						text="Sign Up"
 						link="/signup"
@@ -208,9 +142,6 @@
 			<div
 				class="flex items-center justify-center w-8 h-8 mb-4 text-center bg-white bg-center rounded-lg icon shadow-soft-2xl"
 			>
-				<!-- <i
-					class="top-0 z-10 text-lg leading-none text-transparent ni ni-diamond bg-gradient-to-tl from-slate-600 to-slate-300 bg-clip-text opacity-80"
-				/> -->
 				<Fa icon={faDiamondTurnRight} class="text-gray-500" />
 			</div>
 			<div class="transition-all duration-200 ease-nav-brand">
