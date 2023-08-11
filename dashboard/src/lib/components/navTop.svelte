@@ -7,7 +7,7 @@
 </script>
 
 <nav
-	class="fixed top-0 z-10 bg-slate-100 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-none duration-250 ease-in lg:justify-start"
+	class="fixed top-0 z-10 bg-slate-50 w-full flex flex-wrap items-center justify-between py-2 transition-all shadow-md duration-250 ease-in lg:justify-start"
 >
 	<div class=" flex items-center justify-between w-full px-8 py-1 mx-auto flex-wrap-inherit">
 		<div class="flex flex-row gap-3 items-center">

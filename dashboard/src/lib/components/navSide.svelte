@@ -22,7 +22,7 @@
 		delay: 100,
 		axis: 'x'
 	}}
-	class="max-w-xs shadow-xl bg-slate-100/20 w-full fixed pt-20 h-full flex flex-col justify-between z-10 inset-y-0"
+	class="max-w-xs shadow-xl bg-white w-full fixed pt-16 h-full flex flex-col justify-between z-10 inset-y-0"
 >
 	<div class="flex flex-col h-full">
 		<!-- <div class="h-20">
@@ -37,9 +37,9 @@
 			</a>
 		</div> -->
 
-		<hr
+		<!-- <hr
 			class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/10 to-transparent"
-		/>
+		/> -->
 
 		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
 			<ul class="flex flex-col pl-0 mb-0">
