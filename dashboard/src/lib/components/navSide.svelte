@@ -22,7 +22,7 @@
 		delay: 100,
 		axis: 'x'
 	}}
-	class="max-w-xs shadow-xl bg-slate-100 w-full fixed pt-20 h-full flex flex-col justify-between z-10 inset-y-0"
+	class="max-w-xs shadow-xl bg-slate-100/20 w-full fixed pt-20 h-full flex flex-col justify-between z-10 inset-y-0"
 >
 	<div class="flex flex-col h-full">
 		<!-- <div class="h-20">
