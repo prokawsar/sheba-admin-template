@@ -2,6 +2,7 @@
 	import NavItem from '$lib/elements/navItem.svelte';
 	import { activeTab } from '$lib/stores/store';
 	import {
+		faCalendarAlt,
 		faChartLine,
 		faCog,
 		faCreditCardAlt,
@@ -83,6 +84,14 @@
 						link="/faq"
 						icon={faQuestionCircle}
 						onClick={() => ($activeTab = 'faq')}
+					/>
+				</li>
+				<li class="w-full">
+					<NavItem
+						text="Calendar"
+						link="/calendar"
+						icon={faCalendarAlt}
+						onClick={() => ($activeTab = 'calendar')}
 					/>
 				</li>
 
