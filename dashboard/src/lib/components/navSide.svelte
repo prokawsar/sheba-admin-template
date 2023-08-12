@@ -202,13 +202,15 @@
 			</ul>
 		</div>
 	</div>
-	<div
+	<!-- <div
 		class="after:opacity-65 after:bg-gradient-to-tl after:from-slate-600 after:to-slate-300 relative flex min-w-0 flex-col items-center break-words rounded-2xl border-0 border-solid border-blue-900 bg-white bg-clip-border shadow-none after:absolute after:top-0 after:bottom-0 after:left-0 after:z-10 after:block after:h-full after:w-full after:rounded-2xl after:content-['']"
-	>
-		<div class="mb-7 absolute h-full w-full rounded-2xl bg-cover bg-center" />
-		<div class="relative z-20 flex-auto w-full p-4 text-left text-white">
+	> -->
+	<div class="mx-1">
+		<div
+			class="bg-gradient-to-tl from-slate-600 to-slate-300 relative z-20 flex-auto w-full p-4 text-left rounded-lg text-white"
+		>
 			<div
-				class="flex items-center justify-center w-8 h-8 mb-4 text-center bg-white bg-center rounded-lg icon shadow-soft-2xl"
+				class="flex items-center justify-center w-8 h-8 mb-4 text-center bg-white bg-center rounded-lg icon shadow-2xl"
 			>
 				<Fa icon={faDiamondTurnRight} class="text-gray-500" />
 			</div>
@@ -216,7 +218,7 @@
 				<h6 class="mb-0 text-white">Need help?</h6>
 				<p class="mt-0 mb-4 text-xs font-semibold leading-tight">Please check our docs</p>
 				<a
-					href="https://sheba-queue.vercel.app/quick-start/sheba-admin-dashboard/"
+					href="/docs/"
 					target="_blank"
 					class="inline-block w-full px-8 py-2 mb-0 text-xs font-bold text-center text-black uppercase transition-all ease-in bg-white border-0 border-white rounded-lg shadow-soft-md bg-150 leading-pro hover:shadow-soft-2xl hover:scale-102"
 				>
@@ -225,4 +227,5 @@
 			</div>
 		</div>
 	</div>
+	<!-- </div> -->
 </aside>
