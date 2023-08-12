@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import NavItem from '$lib/elements/navItem.svelte';
 	import { activeTab } from '$lib/stores/store';
 	import {
@@ -16,9 +16,22 @@
 	import Fa from 'svelte-fa';
 	import { slide } from 'svelte/transition';
 
-	let showElements = false,
-		showAuth = false,
-		showPricing = false;
+	const groups: any = {
+		showElements: false,
+		showAuth: false,
+		showPrice: false
+	};
+
+	const collapseExpandMenu = (groupName: string = '') => {
+		if (!groupName) return;
+		groups[groupName] = !groups[groupName];
+
+		for (const key in groups) {
+			if (key !== groupName) {
+				groups[key] = false;
+			}
+		}
+	};
 </script>
 
 <aside
@@ -99,14 +112,14 @@
 					<NavItem
 						text="UI Elements"
 						group
-						bind:groupActive={showElements}
+						bind:groupActive={groups['showElements']}
 						icon={faCog}
 						onClick={() => {
-							showElements = !showElements;
+							collapseExpandMenu('showElements');
 						}}
 					/>
 
-					{#if showElements}
+					{#if groups['showElements']}
 						<div
 							transition:slide={{
 								duration: 200,
@@ -130,14 +143,14 @@
 					<NavItem
 						text="Pricing"
 						group
-						bind:groupActive={showPricing}
+						bind:groupActive={groups['showPrice']}
 						icon={faMoneyBill1Wave}
 						onClick={() => {
-							showPricing = !showPricing;
+							collapseExpandMenu('showPrice');
 						}}
 					/>
 
-					{#if showPricing}
+					{#if groups['showPrice']}
 						<div
 							transition:slide={{
 								duration: 200,
@@ -156,14 +169,14 @@
 					<NavItem
 						text="Authentication"
 						group
-						bind:groupActive={showAuth}
+						bind:groupActive={groups['showAuth']}
 						icon={faUser}
 						onClick={() => {
-							showAuth = !showAuth;
+							collapseExpandMenu('showAuth');
 						}}
 					/>
 
-					{#if showAuth}
+					{#if groups['showAuth']}
 						<div
 							transition:slide={{
 								duration: 200,
