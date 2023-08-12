@@ -35,8 +35,8 @@
 		</div>
 
 		<div class="h-20">
-			<div class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700">
-				<span class="ml-1 font-semibold text-xl transition-all duration-200 ease-nav-brand">
+			<div class="block text-center py-6 m-0 text-sm whitespace-nowrap text-slate-700">
+				<span class="font-semibold text-xl transition-all duration-200">
 					Sheba Admin Configuration
 				</span>
 			</div>
@@ -47,30 +47,7 @@
 		/>
 
 		<div class="items-center h-full block w-auto overflow-auto grow basis-full">
-			<ul class="flex flex-col pl-0 mb-0">
-				<li class="w-full">
-					<NavItem
-						text="Dashboard"
-						icon={faDashboard}
-						link="/"
-						onClick={() => ($activeTab = 'dashboard')}
-					/>
-				</li>
-
-				<li class="w-full">
-					<NavItem text="Tables" icon={faTable} onClick={() => ($activeTab = 'tables')} />
-				</li>
-
-				<li class="w-full">
-					<NavItem
-						text="UI Elements"
-						icon={faCog}
-						onClick={() => {
-							(showElements = !showElements), ($activeTab = 'uielements');
-						}}
-					/>
-				</li>
-			</ul>
+			<h2 class="text-lg text-center text-gray-600 underline">Site settings belong here</h2>
 		</div>
 	</div>
 </aside>
