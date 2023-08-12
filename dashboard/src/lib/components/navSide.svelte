@@ -7,13 +7,16 @@
 		faCreditCardAlt,
 		faDashboard,
 		faDiamondTurnRight,
+		faMoneyBill1Wave,
 		faTable,
 		faUser
 	} from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 	import { slide } from 'svelte/transition';
 
-	let showElements = false;
+	let showElements = false,
+		showAuth = false,
+		showPricing = false;
 </script>
 
 <aside
@@ -73,72 +76,102 @@
 					/>
 				</li>
 
-				<!-- <li class="w-full">
-					<a
-						class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-						href="./pages/rtl.html"
-					>
-						<div
-							class="shadow-xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2"
-						>
-							<Settings />
-						</div>
-						<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft"> RTL </span>
-					</a>
-				</li> -->
 				<li class="w-full">
 					<NavItem
 						text="UI Elements"
+						group
+						bind:groupActive={showElements}
 						icon={faCog}
 						onClick={() => {
-							(showElements = !showElements), ($activeTab = 'uielements');
+							showElements = !showElements;
 						}}
 					/>
 
-					<div class="flex-col hidden" class:!flex={showElements}>
-						<NavItem text="Buttons" />
-
-						<a
-							class="hover:shadow-xl rounded-lg py-2 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
-							href=""
+					{#if showElements}
+						<div
+							transition:slide={{
+								duration: 200,
+								delay: 50,
+								axis: 'y'
+							}}
+							class="flex flex-col"
 						>
-							<span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">
-								Alert
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="w-full mt-4">
-					<h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase opacity-60">
-						Account pages
-					</h6>
+							<NavItem  text="Alerts" classes="pl-12" />
+							<NavItem  text="Buttons" classes="pl-12" />
+							<NavItem  text="Datepicker" classes="pl-12" />
+							<NavItem  text="Modals" classes="pl-12" />
+							<NavItem  text="Panels" classes="pl-12" />
+							<NavItem  text="Tooltips" classes="pl-12" />
+						</div>
+					{/if}
 				</li>
 
 				<li class="w-full">
 					<NavItem
-						text="Profile"
-						link="/profile"
-						icon={faUser}
-						onClick={() => ($activeTab = 'profile')}
+						text="Pricing"
+						group
+						bind:groupActive={showPricing}
+						icon={faMoneyBill1Wave}
+						onClick={() => {
+							showPricing = !showPricing;
+						}}
 					/>
-				</li>
 
-				<li class=" w-full">
-					<NavItem
-						text="Sign In"
-						link="/signin"
-						icon={faUser}
-						onClick={() => ($activeTab = 'signin')}
-					/>
+					{#if showPricing}
+						<div
+							transition:slide={{
+								duration: 200,
+								delay: 50,
+								axis: 'y'
+							}}
+							class="flex-col"
+						>
+							<NavItem text="Column Pricing" classes="pl-12" />
+							<NavItem text="Table Pricing" classes="pl-12" />
+						</div>
+					{/if}
 				</li>
 
 				<li class="w-full">
 					<NavItem
-						text="Sign Up"
-						link="/signup"
+						text="Authentication"
+						group
+						bind:groupActive={showAuth}
 						icon={faUser}
-						onClick={() => ($activeTab = 'signup')}
+						onClick={() => {
+							showAuth = !showAuth;
+						}}
 					/>
+
+					{#if showAuth}
+						<div
+							transition:slide={{
+								duration: 200,
+								delay: 50,
+								axis: 'y'
+							}}
+							class="flex-col"
+						>
+							<NavItem
+								text="Profile"
+								classes="pl-12"
+								link="/profile"
+								onClick={() => ($activeTab = 'profile')}
+							/>
+							<NavItem
+								text="Sign In"
+								classes="pl-12"
+								link="/signin"
+								onClick={() => ($activeTab = 'signin')}
+							/>
+							<NavItem
+								text="Sign Up"
+								classes="pl-12"
+								link="/signup"
+								onClick={() => ($activeTab = 'signup')}
+							/>
+						</div>
+					{/if}
 				</li>
 			</ul>
 		</div>
