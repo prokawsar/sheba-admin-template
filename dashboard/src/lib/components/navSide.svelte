@@ -8,6 +8,7 @@
 		faDashboard,
 		faDiamondTurnRight,
 		faMoneyBill1Wave,
+		faQuestionCircle,
 		faTable,
 		faUser
 	} from '@fortawesome/free-solid-svg-icons';
@@ -63,9 +64,9 @@
 					/>
 				</li>
 
-				<li class="w-full">
+				<!-- <li class="w-full">
 					<NavItem text="Tables" icon={faTable} onClick={() => ($activeTab = 'tables')} />
-				</li>
+				</li> -->
 
 				<li class="w-full">
 					<NavItem
@@ -73,6 +74,15 @@
 						icon={faCreditCardAlt}
 						link="/billing"
 						onClick={() => ($activeTab = 'billing')}
+					/>
+				</li>
+
+				<li class="w-full">
+					<NavItem
+						text="FAQ"
+						link="/faq"
+						icon={faQuestionCircle}
+						onClick={() => ($activeTab = 'faq')}
 					/>
 				</li>
 
@@ -96,12 +106,13 @@
 							}}
 							class="flex flex-col"
 						>
-							<NavItem  text="Alerts" classes="pl-12" />
-							<NavItem  text="Buttons" classes="pl-12" />
-							<NavItem  text="Datepicker" classes="pl-12" />
-							<NavItem  text="Modals" classes="pl-12" />
-							<NavItem  text="Panels" classes="pl-12" />
-							<NavItem  text="Tooltips" classes="pl-12" />
+							<NavItem link="/ui/alerts" text="Alerts" classes="pl-12" />
+							<NavItem link="/ui/buttons" text="Buttons" classes="pl-12" />
+							<NavItem link="/ui/datepicker" text="Datepicker" classes="pl-12" />
+							<NavItem link="/ui/modals" text="Modals" classes="pl-12" />
+							<NavItem link="/ui/panels" text="Panels" classes="pl-12" />
+							<NavItem link="/ui/tables" text="Tables" classes="pl-12" />
+							<NavItem link="/ui/tooltips" text="Tooltips" classes="pl-12" />
 						</div>
 					{/if}
 				</li>
@@ -169,6 +180,12 @@
 								classes="pl-12"
 								link="/signup"
 								onClick={() => ($activeTab = 'signup')}
+							/>
+							<NavItem
+								text="Error"
+								classes="pl-12"
+								link="/error"
+								onClick={() => ($activeTab = 'error')}
 							/>
 						</div>
 					{/if}
