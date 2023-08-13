@@ -224,12 +224,6 @@
 								link="/signup"
 								onClick={() => ($activeTab = 'signup')}
 							/>
-							<NavItem
-								text="Error"
-								classes="pl-12"
-								link="/error"
-								onClick={() => ($activeTab = 'error')}
-							/>
 						</div>
 					{/if}
 				</li>
@@ -267,30 +261,12 @@
 								onClick={() => ($activeTab = 'faq')}
 							/>
 
-							<!-- <NavItem
-								text="Profile"
-								classes="pl-12"
-								link="/profile"
-								onClick={() => ($activeTab = 'profile')}
-							/>
-							<NavItem
-								text="Sign In"
-								classes="pl-12"
-								link="/signin"
-								onClick={() => ($activeTab = 'signin')}
-							/>
-							<NavItem
-								text="Sign Up"
-								classes="pl-12"
-								link="/signup"
-								onClick={() => ($activeTab = 'signup')}
-							/>
 							<NavItem
 								text="Error"
 								classes="pl-12"
-								link="/error"
+								link="/general-pages/error"
 								onClick={() => ($activeTab = 'error')}
-							/> -->
+							/>
 						</div>
 					{/if}
 				</li>

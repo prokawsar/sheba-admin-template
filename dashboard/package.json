@@ -15,6 +15,10 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@event-calendar/core": "^1.5.1",
+		"@event-calendar/day-grid": "^1.5.1",
+		"@event-calendar/interaction": "^1.5.1",
+		"@event-calendar/time-grid": "^1.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@inlang/sdk-js": "^0.11.0",
 		"@playwright/test": "^1.28.1",
