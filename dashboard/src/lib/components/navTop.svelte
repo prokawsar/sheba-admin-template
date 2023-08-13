@@ -20,10 +20,12 @@
 				</span>
 			</a>
 		</div>
-		<div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
+		<div
+			class="flex items-center justify-end mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto"
+		>
 			<div class="flex items-center md:ml-auto md:pr-4">
 				<div
-					class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft"
+					class="relative hidden md:flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft"
 				>
 					<span
 						class="text-sm ease-soft leading-5.6 absolute z-20 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all"

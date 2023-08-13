@@ -30,7 +30,11 @@
 		{#if showSideNav}
 			<NavSide />
 		{/if}
-		<main class="h-full relative transition-all duration-150 delay-75" class:pl-80={showSideNav}>
+		<main
+			class="{showSideNav
+				? 'md:pl-80'
+				: ''} bg-gray-50 h-fullrelative transition-all duration-150 delay-75"
+		>
 			<!-- <div class="mx-4">
 				<NavTop />
 			</div> -->
