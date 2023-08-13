@@ -118,4 +118,4 @@
 	});
 </script>
 
-<canvas id="chart" bind:this={canvasRef} />
+<canvas bind:this={canvasRef} />
