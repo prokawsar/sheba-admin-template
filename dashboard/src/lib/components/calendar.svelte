@@ -51,53 +51,52 @@
 				end: days[0] + ' 14:00',
 
 				title: 'The calendar can display background and regular events',
-				color: '#FE6B64'
+				color: '#38bdf8'
 			},
 			{
 				start: days[1] + ' 16:00',
 				end: days[2] + ' 08:00',
-
 				title: 'An event may span to another day',
-				color: '#B29DD9'
+				color: '#84cc16'
 			},
 			{
 				start: days[2] + ' 09:00',
 				end: days[2] + ' 13:00',
 				title:
 					'Events can be assigned to resources and the calendar has the resources view built-in',
-				color: '#779ECB'
+				color: '#d946ef'
 			},
 			{
 				start: days[3] + ' 14:00',
 				end: days[3] + ' 20:00',
 				title: '',
-				color: '#FE6B64'
+				color: '#cbd5e1'
 			},
 			{
 				start: days[3] + ' 15:00',
 				end: days[3] + ' 18:00',
 
 				title: 'Overlapping events are positioned properly',
-				color: '#779ECB'
+				color: '#a855f7'
 			},
 			{
 				start: days[5] + ' 10:00',
 				end: days[5] + ' 16:00',
 
 				titleHTML: 'You have complete control over the <i><b>display</b></i> of events…',
-				color: '#779ECB'
+				color: '#d946ef'
 			},
 			{
 				start: days[5] + ' 14:00',
 				end: days[5] + ' 19:00',
 				title: '…and you can drag and drop the events!',
-				color: '#FE6B64'
+				color: '#a855f7'
 			},
 			{
 				start: days[5] + ' 18:00',
 				end: days[5] + ' 21:00',
 				title: '',
-				color: '#B29DD9'
+				color: '#d946ef'
 			},
 			{
 				start: days[1],
