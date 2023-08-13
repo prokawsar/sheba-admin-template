@@ -1,4 +1,9 @@
 <script lang="ts">
+	/*
+		event-calendar
+		https://github.com/vkurko/calendar
+	*/
+
 	import Calendar from '@event-calendar/core';
 	import DayGrid from '@event-calendar/day-grid';
 	import TimeGrid from '@event-calendar/time-grid';
