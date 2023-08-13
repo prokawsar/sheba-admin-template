@@ -2,6 +2,7 @@
 	import NavItem from '$lib/elements/navItem.svelte';
 	import { activeTab } from '$lib/stores/store';
 	import {
+		faAlignCenter,
 		faCalendarAlt,
 		faChartLine,
 		faCog,
@@ -19,7 +20,9 @@
 	const groups: any = {
 		showElements: false,
 		showAuth: false,
-		showPrice: false
+		showPrice: false,
+		showCharts: false,
+		showGenpgaes: false
 	};
 
 	const collapseExpandMenu = (groupName: string = '') => {
@@ -69,36 +72,7 @@
 						onClick={() => ($activeTab = 'dashboard')}
 					/>
 				</li>
-				<li class="w-full">
-					<NavItem
-						text="Charts"
-						icon={faChartLine}
-						link="/charts"
-						onClick={() => ($activeTab = 'charts')}
-					/>
-				</li>
 
-				<!-- <li class="w-full">
-					<NavItem text="Tables" icon={faTable} onClick={() => ($activeTab = 'tables')} />
-				</li> -->
-
-				<li class="w-full">
-					<NavItem
-						text="Billing"
-						icon={faCreditCardAlt}
-						link="/billing"
-						onClick={() => ($activeTab = 'billing')}
-					/>
-				</li>
-
-				<li class="w-full">
-					<NavItem
-						text="FAQ"
-						link="/faq"
-						icon={faQuestionCircle}
-						onClick={() => ($activeTab = 'faq')}
-					/>
-				</li>
 				<li class="w-full">
 					<NavItem
 						text="Calendar"
@@ -107,6 +81,53 @@
 						onClick={() => ($activeTab = 'calendar')}
 					/>
 				</li>
+
+				<li class="w-full">
+					<!-- <NavItem
+						text="Charts"
+						icon={faChartLine}
+						link="/charts"
+						onClick={() => ($activeTab = 'charts')}
+					/> -->
+
+					<NavItem
+						text="Charts"
+						group
+						bind:groupActive={groups['showCharts']}
+						icon={faCog}
+						onClick={() => {
+							collapseExpandMenu('showCharts');
+						}}
+					/>
+
+					{#if groups['showCharts']}
+						<div
+							transition:slide={{
+								duration: 200,
+								delay: 50,
+								axis: 'y'
+							}}
+							class="flex flex-col"
+						>
+							<NavItem
+								link="/charts/chartjs"
+								text="Chart.js"
+								classes="pl-12"
+								onClick={() => ($activeTab = 'chart.js')}
+							/>
+							<NavItem
+								link="/charts/apexchart"
+								text="ApexChart"
+								classes="pl-12"
+								onClick={() => ($activeTab = 'apexchart')}
+							/>
+						</div>
+					{/if}
+				</li>
+
+				<!-- <li class="w-full">
+					<NavItem text="Tables" icon={faTable} onClick={() => ($activeTab = 'tables')} />
+				</li> -->
 
 				<li class="w-full">
 					<NavItem
@@ -212,6 +233,67 @@
 						</div>
 					{/if}
 				</li>
+
+				<li class="w-full">
+					<NavItem
+						text="General Pages"
+						group
+						bind:groupActive={groups['showGenpgaes']}
+						icon={faAlignCenter}
+						onClick={() => {
+							collapseExpandMenu('showGenpgaes');
+						}}
+					/>
+
+					{#if groups['showGenpgaes']}
+						<div
+							transition:slide={{
+								duration: 200,
+								delay: 50,
+								axis: 'y'
+							}}
+							class="flex-col"
+						>
+							<NavItem
+								text="Billing"
+								classes="pl-12"
+								link="/general-pages/billing"
+								onClick={() => ($activeTab = 'billing')}
+							/>
+							<NavItem
+								text="FAQ"
+								link="/general-pages/faq"
+								classes="pl-12"
+								onClick={() => ($activeTab = 'faq')}
+							/>
+
+							<!-- <NavItem
+								text="Profile"
+								classes="pl-12"
+								link="/profile"
+								onClick={() => ($activeTab = 'profile')}
+							/>
+							<NavItem
+								text="Sign In"
+								classes="pl-12"
+								link="/signin"
+								onClick={() => ($activeTab = 'signin')}
+							/>
+							<NavItem
+								text="Sign Up"
+								classes="pl-12"
+								link="/signup"
+								onClick={() => ($activeTab = 'signup')}
+							/>
+							<NavItem
+								text="Error"
+								classes="pl-12"
+								link="/error"
+								onClick={() => ($activeTab = 'error')}
+							/> -->
+						</div>
+					{/if}
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -228,14 +310,14 @@
 				<Fa icon={faDiamondTurnRight} class="text-gray-500" />
 			</div>
 			<div class="transition-all duration-200 ease-nav-brand">
-				<h6 class="mb-0 text-white">Need help?</h6>
-				<p class="mt-0 mb-4 text-xs font-semibold leading-tight">Please check our docs</p>
+				<h6 class="mb-0 text-white">Want to use on your project?</h6>
+				<p class="mt-0 mb-4 text-xs font-semibold leading-tight">Please support with a coffee</p>
 				<a
 					href="/docs/"
 					target="_blank"
 					class="inline-block w-full px-8 py-2 mb-0 text-xs font-bold text-center text-black uppercase transition-all ease-in bg-white border-0 border-white rounded-lg shadow-soft-md bg-150 leading-pro hover:shadow-soft-2xl hover:scale-102"
 				>
-					Documentation
+					Buy Now
 				</a>
 			</div>
 		</div>
