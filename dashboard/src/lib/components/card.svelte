@@ -1,10 +1,15 @@
+<script>
+	import { faCoins } from '@fortawesome/free-solid-svg-icons';
+	import Fa from 'svelte-fa';
+</script>
+
 <div class="w-full max-w-full">
 	<div
 		class="relative flex flex-col min-w-0 break-words bg-white shadow-xl rounded-2xl bg-clip-border"
 	>
-		<div class="flex-auto p-4">
-			<div class="flex flex-row -mx-3">
-				<div class="flex-none w-2/3 max-w-full px-3">
+		<div class="flex-auto p-1 md:p-3">
+			<div class="flex flex-row">
+				<div class="flex-none w-2/3 max-w-full px-1 sm:px-3">
 					<div>
 						<p class="mb-0 font-sans text-sm font-semibold leading-normal">Today's Money</p>
 						<h5 class="mb-0 font-bold">
@@ -13,11 +18,11 @@
 						</h5>
 					</div>
 				</div>
-				<div class="px-3 text-right basis-1/3">
+				<div class="lg:px-3 flex items-center lg:justify-end basis-1/3">
 					<div
-						class="inline-block w-12 h-full text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500"
+						class="w-10 h-2/3 sm:w-12 lg:h-full flex justify-center items-center text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500"
 					>
-						<i class="ni leading-none ni-money-coins text-lg relative top-3.5 text-white" />
+						<Fa icon={faCoins} class="text-white" />
 					</div>
 				</div>
 			</div>
