@@ -3,7 +3,7 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<div class="w-full px-3 mb-6 lg:mb-0 lg:w-7/12 lg:flex-none">
+<div class="w-full mb-6 lg:mb-0 lg:w-7/12">
 	<div
 		class="relative flex flex-col min-w-0 break-words bg-white shadow-xl rounded-2xl bg-clip-border"
 	>
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 </div>
-<div class="w-full max-w-full px-3 lg:w-5/12 lg:flex-none">
+<div class="w-full max-w-full lg:w-5/12">
 	<div
 		class="border-black/12.5 shadow-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border p-4"
 	>

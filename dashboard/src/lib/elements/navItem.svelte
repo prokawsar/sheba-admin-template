@@ -12,6 +12,7 @@
 		text = '',
 		group = false,
 		groupActive = false,
+		subItem = false,
 		onClick: Function = () => {},
 		icon: IconDefinition = {
 			iconName: 'hooli',
@@ -28,7 +29,8 @@
 	on:mouseleave={() => (hover = false)}
 	class:!shadow-md={groupActive}
 	class:!shadow-lg={activeMenu}
-	class="hover:shadow-md shadow-sm rounded-lg py-2 text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors {classes}"
+	class="hover:shadow-md shadow-sm rounded-lg py-2 text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors
+	 {classes}"
 	href={link || ''}
 	on:click={() => (onClick ? onClick() : null)}
 >
@@ -42,7 +44,7 @@
 	<span
 		class="ml-1 text-gray-700 duration-300 pointer-events-none {hover || activeMenu
 			? '!text-black'
-			: ''}"
+			: ''} {subItem ? 'pl-12 text-slate-500' : ''}"
 	>
 		{text}
 	</span>

@@ -3,7 +3,7 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<div class="w-full max-w-full mt-0 mb-6 md:mb-0 md:w-1/2 md:flex-none lg:w-2/3 lg:flex-none">
+<div class="w-full max-w-full mt-0 md:w-1/2 md:flex-none lg:w-2/3 lg:flex-none">
 	<div
 		class="border-black/12.5 shadow-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border"
 	>
@@ -18,10 +18,9 @@
 						&nbsp; this month
 					</p>
 				</div>
-				<div class="flex-none w-5/12 max-w-full px-3 my-auto text-right lg:w-1/2 lg:flex-none">
-					<div class="relative pr-6 lg:float-right">
-						<a class="cursor-pointer" aria-expanded="false">
-							<!-- <i class="fa fa-ellipsis-v text-slate-400" aria-hidden="true" /> -->
+				<div class="flex-none w-5/12 max-w-full px-3 my-auto text-right lg:w-1/2">
+					<div class="relative flex justify-end lg:float-right">
+						<a class="cursor-pointer" href="#" aria-expanded="false">
 							<Fa icon={faEllipsis} />
 						</a>
 						<p class="hidden transform-dropdown-show" />

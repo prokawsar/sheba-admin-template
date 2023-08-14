@@ -43,7 +43,7 @@
 		delay: 100,
 		axis: 'x'
 	}}
-	class="max-w-xs shadow-xl bg-white w-full fixed pt-16 h-full flex flex-col justify-between z-10 inset-y-0"
+	class="max-w-xs shadow-xl bg-white w-full fixed pt-16 h-full flex flex-col justify-between z-20 inset-y-0"
 >
 	<div class="flex flex-col h-full">
 		<!-- <div class="h-20">
@@ -207,20 +207,20 @@
 							class="flex-col"
 						>
 							<NavItem
+								subItem
 								text="Profile"
-								classes="pl-12"
 								link="/profile"
 								onClick={() => ($activeTab = 'profile')}
 							/>
 							<NavItem
+								subItem
 								text="Sign In"
-								classes="pl-12"
 								link="/signin"
 								onClick={() => ($activeTab = 'signin')}
 							/>
 							<NavItem
+								subItem
 								text="Sign Up"
-								classes="pl-12"
 								link="/signup"
 								onClick={() => ($activeTab = 'signup')}
 							/>
@@ -249,21 +249,21 @@
 							class="flex-col"
 						>
 							<NavItem
+								subItem
 								text="Billing"
-								classes="pl-12"
 								link="/general-pages/billing"
 								onClick={() => ($activeTab = 'billing')}
 							/>
 							<NavItem
+								subItem
 								text="FAQ"
 								link="/general-pages/faq"
-								classes="pl-12"
 								onClick={() => ($activeTab = 'faq')}
 							/>
 
 							<NavItem
+								subItem
 								text="Error"
-								classes="pl-12"
 								link="/general-pages/error"
 								onClick={() => ($activeTab = 'error')}
 							/>

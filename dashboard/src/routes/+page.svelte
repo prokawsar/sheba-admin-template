@@ -13,19 +13,19 @@
 
 <div class="mx-4">
 	<div class="flex flex-col gap-3 mt-5">
-		<div class="flex flex-row gap-3">
+		<div class="grid grid-cols-2 md:flex md:flex-row gap-3">
 			<Card />
 			<Card />
 			<Card />
 			<Card />
 		</div>
 
-		<div class="flex flex-row gap-3">
+		<div class="flex flex-col md:flex-row gap-3">
 			<Table />
 			<Timeline />
 		</div>
 
-		<div class="flex flex-wrap -mx-3">
+		<div class="flex flex-col md:flex-row gap-3">
 			<CardImage />
 		</div>
 	</div>
