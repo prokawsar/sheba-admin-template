@@ -1,4 +1,4 @@
-<div class="container pt-20">
+<div class="container pt-10">
 	<div class="flex flex-wrap">
 		<div
 			class="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0 md:w-7/12 lg:w-5/12 xl:w-4/12"
