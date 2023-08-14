@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="mx-4">
-	<div class="flex flex-col gap-3 mt-5">
+	<div class="flex flex-col gap-3">
 		<div class="grid grid-cols-2 md:flex md:flex-row gap-3">
 			<Card />
 			<Card />

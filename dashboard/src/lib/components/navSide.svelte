@@ -4,14 +4,10 @@
 	import {
 		faAlignCenter,
 		faCalendarAlt,
-		faChartLine,
 		faCog,
-		faCreditCardAlt,
 		faDashboard,
 		faDiamondTurnRight,
 		faMoneyBill1Wave,
-		faQuestionCircle,
-		faTable,
 		faUser
 	} from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';

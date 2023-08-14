@@ -33,7 +33,7 @@
 		<main
 			class="{showSideNav
 				? 'lg:pl-80'
-				: ''} bg-gray-50 h-fullrelative transition-all duration-150 delay-75"
+				: ''} bg-gray-50 h-full pt-5 relative transition-all duration-150 delay-75"
 		>
 			<!-- <div class="mx-4">
 				<NavTop />

@@ -29,7 +29,7 @@
 	on:mouseleave={() => (hover = false)}
 	class:!shadow-md={groupActive}
 	class:!shadow-lg={activeMenu}
-	class="hover:shadow-md shadow-sm rounded-lg py-2 text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors
+	class="hover:shadow-md shadow-sm rounded-sm py-2 text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors
 	 {classes}"
 	href={link || ''}
 	on:click={() => (onClick ? onClick() : null)}
