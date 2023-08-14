@@ -44,7 +44,7 @@
 	<span
 		class="ml-1 text-gray-700 duration-300 pointer-events-none {hover || activeMenu
 			? '!text-black'
-			: ''} {subItem ? 'pl-12 text-slate-500' : ''}"
+			: ''} {subItem ? 'pl-10 text-slate-500' : ''}"
 	>
 		{text}
 	</span>
