@@ -12,3 +12,6 @@ export const load = async () => {
 	}
 	return;
 };
+
+// Temp fix for apexchart
+export let ssr = false;
