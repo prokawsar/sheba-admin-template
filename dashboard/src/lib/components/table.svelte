@@ -90,7 +90,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-xd.svg"
+											src="/images/small-logos/logo-xd.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="xd"
 										/>
