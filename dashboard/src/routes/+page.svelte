@@ -21,8 +21,12 @@
 		</div>
 
 		<div class="flex flex-col md:flex-row gap-3">
-			<Table />
-			<Timeline />
+			<div class="md:w-1/2 md:flex-none lg:w-2/3">
+				<Table />
+			</div>
+			<div class="w-full max-w-full md:w-1/2 lg:w-1/3 h-full">
+				<Timeline />
+			</div>
 		</div>
 
 		<div class="flex flex-col md:flex-row gap-3">

@@ -3,7 +3,7 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<div class="w-full max-w-full mt-0 md:w-1/2 md:flex-none lg:w-2/3 lg:flex-none">
+<div class="w-full max-w-full mt-0 md:flex-none lg:flex-none">
 	<div
 		class="border-black/12.5 shadow-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border"
 	>
@@ -109,7 +109,7 @@
 										data-placement="bottom"
 									>
 										<img
-											src="images/people/young-woman.jpg"
+											src="/images/people/young-woman.jpg"
 											class="w-full rounded-full"
 											alt="team1"
 										/>
@@ -121,7 +121,7 @@
 										data-placement="bottom"
 									>
 										<img
-											src="images/people/young-woman.jpg"
+											src="/images/people/young-woman.jpg"
 											class="w-full rounded-full"
 											alt="team2"
 										/>
@@ -133,7 +133,7 @@
 										data-placement="bottom"
 									>
 										<img
-											src="images/people/young-woman.jpg"
+											src="/images/people/young-woman.jpg"
 											class="w-full rounded-full"
 											alt="team3"
 										/>
@@ -145,7 +145,7 @@
 										data-placement="bottom"
 									>
 										<img
-											src="images/people/young-woman.jpg"
+											src="/images/people/young-woman.jpg"
 											class="w-full rounded-full"
 											alt="team4"
 										/>
@@ -154,12 +154,12 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
@@ -190,7 +190,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-atlassian.svg"
+											src="/images/small-logos/logo-atlassian.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="atlassian"
 										/>
@@ -204,12 +204,12 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
@@ -240,7 +240,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-slack.svg"
+											src="/images/small-logos/logo-slack.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="team7"
 										/>
@@ -254,17 +254,17 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
@@ -295,7 +295,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-spotify.svg"
+											src="/images/small-logos/logo-spotify.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="spotify"
 										/>
@@ -309,12 +309,12 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
@@ -345,7 +345,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-jira.svg"
+											src="/images/small-logos/logo-jira.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="jira"
 										/>
@@ -359,22 +359,22 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
@@ -405,7 +405,7 @@
 								<div class="flex px-2 py-1">
 									<div>
 										<img
-											src="images/small-logos/logo-invision.svg"
+											src="/images/small-logos/logo-invision.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-soft-in-out h-9 w-9 rounded-xl"
 											alt="invision"
 										/>
@@ -419,12 +419,12 @@
 								<div class="flex -space-x-4">
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 									<img
 										class="cursor-pointer z-10 hover:z-20 w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-										src="images/people/young-woman.jpg"
+										src="/images/people/young-woman.jpg"
 										alt=""
 									/>
 								</div>
