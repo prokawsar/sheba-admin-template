@@ -17,7 +17,7 @@
 		on:click={() => (open = !open)}
 	>
 		<span class="bg-slate-200 hover:bg-blue-100 text-gray-600 hover:text-blue-700 p-1 rounded">
-			<Fa icon={!open ? faPlus : faMinus} size="sm" />
+			<Fa icon={open ? faMinus : faPlus} size="sm" />
 		</span>
 		<h2 class="font-medium text-slate-700 text-left">
 			{question}
