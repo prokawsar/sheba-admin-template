@@ -1,6 +1,4 @@
 <script>
-	import collapse from 'svelte-collapse';
-	let open = true;
 	import CollapsableDiv from '$lib/elements/collapsableDiv.svelte';
 	import Buttonlogicalpart from '$lib/elements/buttonlogicalpart.svelte';
 </script>
