@@ -106,7 +106,7 @@
 								<div class="flex py-1">
 									<div class="my-auto">
 										<img
-											src="images/people/young-woman.jpg"
+											src="/images/people/young-woman.jpg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white h-9 w-9 max-w-none rounded-xl"
 										/>
 									</div>
@@ -132,7 +132,7 @@
 								<div class="flex py-1">
 									<div class="my-auto">
 										<img
-											src="images/small-logos/logo-spotify.svg"
+											src="/images/small-logos/logo-spotify.svg"
 											class="inline-flex items-center justify-center mr-4 text-sm text-white bg-gradient-to-tl from-gray-900 to-slate-800 h-9 w-9 max-w-none rounded-xl"
 										/>
 									</div>

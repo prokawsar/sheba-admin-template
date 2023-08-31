@@ -11,7 +11,7 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<div class="w-full max-w-full md:w-1/2 lg:w-1/3">
+<div class="w-full max-w-full">
 	<div
 		class="border-black/12.5 shadow-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border"
 	>

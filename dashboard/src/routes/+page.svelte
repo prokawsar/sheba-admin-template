@@ -24,7 +24,6 @@
 
 		<div class="flex flex-col md:flex-row gap-3">
 			<!-- <Table /> -->
-
 			<div
 				class="w-full bg-white shadow-xl rounded-2xl max-w-full mt-0 md:w-1/2 md:flex-none lg:w-2/3 lg:flex-none"
 			>
