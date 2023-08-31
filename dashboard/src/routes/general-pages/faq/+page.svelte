@@ -1,6 +1,5 @@
 <script>
-	import CollapsableDiv from '$lib/elements/collapsableDiv.svelte';
-	import Buttonlogicalpart from '$lib/elements/buttonlogicalpart.svelte';
+	import CollapsibleSection from '$lib/elements/CollapsibleSection.svelte';
 </script>
 
 <div class="pt-7 pl-7 pr-6 sm:pt-16 sm:pl-20 sm:pr-0 mb-10 sm:mb-10">
@@ -16,12 +15,38 @@
 	<!-- collapse section 1 -->
 
 	<div class="flex justify-around flex-col sm:flex-row">
-		<CollapsableDiv />
+		<div class="pb-10 sm:pb-0">
+			<h2 class="text-2xl">Buying Product</h2>
+			<br />
+		
+			<CollapsibleSection
+				question="How it does it work?"
+				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
+				of hours, even if you can type eighty words as per minute and your writing skills are sharp."
+			/>
+			<br />
+			<CollapsibleSection
+				question="Do I need a designer to use Admin Theme ?"
+				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp."
+			/>
+			<br />
+			<CollapsibleSection
+				question="What do I need to do to start selling?"
+				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp."
+			/>
+			<br />
+			<CollapsibleSection
+				question="How much does Extended license cost?"
+				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp."
+			/>
+			<br />
+		</div>
+
 		<div class="pb-10 sm:pb-0">
 			<h2 class="text-2xl">Installation</h2>
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="What platforms are compatible?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
     of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -29,7 +54,7 @@
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How many people can it support?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
     of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -37,7 +62,7 @@
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How long is the warrianty?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
     of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -45,7 +70,7 @@
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How fast is the installation?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
     of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -62,7 +87,7 @@
 			<h2 class="text-2xl">User Roles</h2>
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How does it work?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -70,7 +95,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="Do I need a designer to use Admin Theme ?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -78,7 +103,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="What do I need to do to start selling?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -86,7 +111,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How much does Extended license cost?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -96,7 +121,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 			<h2 class="text-2xl">Installation</h2>
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="What platforms are compatible?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -104,7 +129,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How many people can it support?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -112,7 +137,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How long is the warrianty??"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
@@ -120,7 +145,7 @@ of hours, even if you can type eighty words as per minute and your writing skill
 
 			<br />
 
-			<Buttonlogicalpart
+			<CollapsibleSection
 				question="How fast is the installation?"
 				answer="First, a disclaimer – the entire process of writing a blog post often takes more than a couple
 of hours, even if you can type eighty words as per minute and your writing skills are sharp."
