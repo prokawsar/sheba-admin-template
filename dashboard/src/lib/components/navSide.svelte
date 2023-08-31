@@ -106,15 +106,15 @@
 							class="flex flex-col"
 						>
 							<NavItem
+								subItem
 								link="/charts/chartjs"
 								text="Chart.js"
-								classes="pl-12"
 								onClick={() => ($activeTab = 'chart.js')}
 							/>
 							<NavItem
+								subItem
 								link="/charts/apexchart"
 								text="ApexChart"
-								classes="pl-12"
 								onClick={() => ($activeTab = 'apexchart')}
 							/>
 						</div>
@@ -145,13 +145,13 @@
 							}}
 							class="flex flex-col"
 						>
-							<NavItem link="/ui/alerts" text="Alerts" classes="pl-12" />
-							<NavItem link="/ui/buttons" text="Buttons" classes="pl-12" />
-							<NavItem link="/ui/datepicker" text="Datepicker" classes="pl-12" />
-							<NavItem link="/ui/modals" text="Modals" classes="pl-12" />
-							<NavItem link="/ui/panels" text="Panels" classes="pl-12" />
-							<NavItem link="/ui/tables" text="Tables" classes="pl-12" />
-							<NavItem link="/ui/tooltips" text="Tooltips" classes="pl-12" />
+							<NavItem subItem link="/ui/alerts" text="Alerts" />
+							<NavItem subItem link="/ui/buttons" text="Buttons" />
+							<NavItem subItem link="/ui/datepicker" text="Datepicker" />
+							<NavItem subItem link="/ui/modals" text="Modals" />
+							<NavItem subItem link="/ui/panels" text="Panels" />
+							<NavItem subItem link="/ui/tables" text="Tables" />
+							<NavItem subItem link="/ui/tooltips" text="Tooltips" />
 						</div>
 					{/if}
 				</li>
@@ -176,8 +176,8 @@
 							}}
 							class="flex-col"
 						>
-							<NavItem text="Column Pricing" classes="pl-12" />
-							<NavItem text="Table Pricing" classes="pl-12" />
+							<NavItem subItem text="Column Pricing" />
+							<NavItem subItem text="Table Pricing" />
 						</div>
 					{/if}
 				</li>

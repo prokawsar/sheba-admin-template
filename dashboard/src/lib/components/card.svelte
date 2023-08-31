@@ -5,7 +5,7 @@
 
 <div class="w-full max-w-full">
 	<div
-		class="relative flex flex-col min-w-0 break-words bg-white shadow-xl rounded-2xl bg-clip-border"
+		class="relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-2xl bg-clip-border"
 	>
 		<div class="flex-auto p-1 md:p-3">
 			<div class="flex flex-row">
